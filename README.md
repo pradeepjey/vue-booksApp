@@ -1,6 +1,6 @@
 # Vue 3 + TypeScript + Vite + Pinia + Tailwindcss
 
-This Books appliation is build with vue3, vitejs, Pinia, Typescript and tailwindcss.
+This Books appliation is build with Vue3, ViteJS, Pinia, Typescript and Tailwindcss.
 
 
 # Application Requirements
