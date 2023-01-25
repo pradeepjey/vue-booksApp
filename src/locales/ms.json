@@ -1,0 +1,20 @@
+{
+  "header":{
+    "home": "Home",
+    "favourite": "kegemaran"
+  },
+  "book": {
+    "favourite": "kegemaran",
+    "view": "pandangan",
+    "chapters": "Bab",
+    "publishedDate": "Tarikh Diterbitkan",
+    "BookStatusHasBeenChanged": "Status buku telah ditukar"
+  },
+  "confirmation": {
+    "confirmation": "Pengesahan",
+    "confirmationText": "Adakah anda ingin meneruskan lebih jauh?",
+    "yes": "Ya",
+    "no": "Tidak",
+    "cancel": "Batal"
+  }
+}

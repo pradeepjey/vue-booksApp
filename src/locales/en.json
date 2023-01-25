@@ -1,0 +1,20 @@
+{
+  "header":{
+    "home": "Home",
+    "favourite": "Favourite"
+  },
+  "book": {
+    "favourite": "Favourite",
+    "view": "view",
+    "chapters": "Chapters",
+    "publishedDate": "Published Date",
+    "BookStatusHasBeenChanged": "Book's status has been changed"
+  },
+  "confirmation": {
+    "confirmation": "Confirmation",
+    "confirmationText": "Do you like to proceed further?",
+    "yes": "Yes",
+    "no": "No",
+    "cancel": "Cancel"
+  }
+}
