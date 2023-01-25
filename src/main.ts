@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import vue3StarRatings from "vue3-star-ratings";
-import Vue3Toasity from 'vue3-toastify';
-import 'vue3-toastify/dist/index.css';
+import vue3StarRatings from "vue3-star-ratings"
+import Vue3Toasity from 'vue3-toastify'
+import 'vue3-toastify/dist/index.css'
 import './style.css'
 import './main.css'
 import App from './App.vue'

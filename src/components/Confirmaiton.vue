@@ -1,11 +1,11 @@
 <script setup lang="ts">
     import { ref } from 'vue'
     import { Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot } from '@headlessui/vue'
-    import { useModal } from "vue-haystack";
-    import { useI18n } from 'vue-i18n';
+    import { useModal } from "vue-haystack"
+    import { useI18n } from 'vue-i18n'
 
     const open = ref(true)
-    const modal = useModal();
+    const modal = useModal()
     const { t } = useI18n({
       inheritLocale: true,
       useScope: 'global'

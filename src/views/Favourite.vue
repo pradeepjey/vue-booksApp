@@ -1,13 +1,13 @@
   
 <script setup lang="ts">
-    import BookCard from '../components/BookCard.vue';
-    import { useBookStore } from '../store/book';
-    import {onMounted} from 'vue';
+    import BookCard from '../components/BookCard.vue'
+    import { useBookStore } from '../store/book'
+    import {onMounted} from 'vue'
 
-    const store = useBookStore();
+    const store = useBookStore()
 
     onMounted(() => {
-        store.getFavouriteBooksFromAPI();
+        store.getFavouriteBooksFromAPI()
     })
 </script>
 

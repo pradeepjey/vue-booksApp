@@ -9,7 +9,7 @@ const apiClient: AxiosInstance = axios.create({
 
 apiClient.interceptors.response.use(
   (res) => {
-    return res.data;
+    return res.data
   }
 )
 

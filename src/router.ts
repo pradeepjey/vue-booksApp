@@ -1,5 +1,5 @@
-import { createWebHistory, createRouter } from "vue-router";
-import { RouteRecordRaw } from "vue-router";
+import { createWebHistory, createRouter } from "vue-router"
+import { RouteRecordRaw } from "vue-router"
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -19,11 +19,11 @@ const routes: Array<RouteRecordRaw> = [
     name: "favourite",
     component: () => import("./views/Favourite.vue"),
   }
-];
+]
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
 });
 
-export default router;
+export default router

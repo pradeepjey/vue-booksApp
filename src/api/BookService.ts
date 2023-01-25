@@ -1,5 +1,5 @@
-import { APILINK } from "./api-links";
-import httpClient from "./http-client";
+import { APILINK } from "./api-links"
+import httpClient from "./http-client"
 
 class BookService {
     /**
@@ -8,7 +8,7 @@ class BookService {
      * @returns promise
      */
     getBookList(): Promise<any> {
-        return httpClient.get(APILINK.GET_BOOKS);
+        return httpClient.get(APILINK.GET_BOOKS)
     }
   
     /**
@@ -18,7 +18,7 @@ class BookService {
      * @returns promise
      */
     getBook(id: any): Promise<any> {
-        return httpClient.get(APILINK.GET_BOOK+id);
+        return httpClient.get(APILINK.GET_BOOK+id)
     }
 
     /**
@@ -27,7 +27,7 @@ class BookService {
      * @returns promise
      */
     getFavouriteBookList(): Promise<any> {
-        return httpClient.get(APILINK.GET_FAVOURITE_BOOKS);
+        return httpClient.get(APILINK.GET_FAVOURITE_BOOKS)
     }
 
     /**
@@ -38,7 +38,7 @@ class BookService {
      * @returns promise
      */
     setFavouriteStatus(bookId: any, status: boolean): Promise<any> {
-        let url = APILINK.SET_FAVOURITE_BOOK + bookId + "/" + status; 
+        let url = APILINK.SET_FAVOURITE_BOOK + bookId + "/" + status
         return httpClient.patch(url, {})
     }
 
@@ -48,10 +48,10 @@ class BookService {
      * @returns promise
      */
     searchBook(txt : string){
-        let url = APILINK.SEARCH_BOOK;
-        let object = { txt: txt };
-        return httpClient.post(url, object);
+        let url = APILINK.SEARCH_BOOK
+        let object = { txt: txt }
+        return httpClient.post(url, object)
     }
 }
   
-export default new BookService();
+export default new BookService()

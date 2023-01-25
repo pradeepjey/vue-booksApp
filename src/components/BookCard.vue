@@ -1,14 +1,14 @@
 
 <script setup lang="ts">
-    import Book from "../types/Book";
-    import Confirmaiton from "./Confirmaiton.vue";
-    import { useModalStore } from "vue-haystack";
-    import { useBookStore } from "../store/book";
-    import { toast } from 'vue3-toastify';
+    import Book from "../types/Book"
+    import Confirmaiton from "./Confirmaiton.vue"
+    import { useModalStore } from "vue-haystack"
+    import { useBookStore } from "../store/book"
+    import { toast } from 'vue3-toastify'
     import { useI18n } from 'vue-i18n'
 
-    const props = defineProps<{ book: Book }>();
-    const store = useBookStore();
+    const props = defineProps<{ book: Book }>()
+    const store = useBookStore()
     const { t } = useI18n({
       inheritLocale: true,
       useScope: 'global'
@@ -41,7 +41,7 @@
      */
     function generateRating(){
         var precision = 100; // 2 decimals
-        return Math.floor(Math.random() * (10 * precision - 1 * precision) + 1 * precision) / (1*precision)/2;
+        return Math.floor(Math.random() * (10 * precision - 1 * precision) + 1 * precision) / (1*precision)/2
     }
 </script>
 

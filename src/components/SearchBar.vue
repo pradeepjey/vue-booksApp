@@ -15,11 +15,11 @@
     function keyupEvent(event: any){
         switch(event.keyCode) {
             case ENTER_KEYCODE:
-                showBook();
-                break;
+                showBook()
+                break
             case RIGHT_KEYCODE:
-                loadCompleteText();
-                break;
+                loadCompleteText()
+                break
             default:
                 getResults()
         }
@@ -45,7 +45,7 @@
      */
     function getResults(){
         if(store.getTypedValue == ""){
-            store.setPredictedValue("");
+            store.setPredictedValue("")
         }else{
             store.searchBookFromAPI(store.typedValue.toString()).then((res: any) => {
                 const predicted = res[0].name

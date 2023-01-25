@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import Book from './../types/Book'
 import BookService from '../api/BookService'
-import { isProxy, toRaw } from 'vue';
+import { toRaw } from 'vue'
 
 export const useBookStore = defineStore('book', {
     state: () => {

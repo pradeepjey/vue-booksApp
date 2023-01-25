@@ -1,14 +1,14 @@
   
 <script setup lang="ts">
     import { useRoute } from 'vue-router'
-    import { useBookStore } from '../store/book';
-    import {onMounted} from 'vue';
-    import Confirmaiton from '../components/Confirmaiton.vue';
-    import { useModalStore } from "vue-haystack";
-    import { toast } from 'vue3-toastify';
-    import { useI18n } from 'vue-i18n';
+    import { useBookStore } from '../store/book'
+    import {onMounted} from 'vue'
+    import Confirmaiton from '../components/Confirmaiton.vue'
+    import { useModalStore } from "vue-haystack"
+    import { toast } from 'vue3-toastify'
+    import { useI18n } from 'vue-i18n'
 
-    const store = useBookStore();
+    const store = useBookStore()
     const route = useRoute()
     const { t } = useI18n({
       inheritLocale: true,
@@ -17,7 +17,7 @@
     
     onMounted(() => {
         const id : string = route.params.id.toString()
-        store.getBookFromAPI(id);
+        store.getBookFromAPI(id)
     })
 
     /**
@@ -30,7 +30,7 @@
                     store.getBooksFromAPI()
                     store.getFavouriteBooksFromAPI()
                     const id : string = route.params.id.toString()
-                    store.getBookFromAPI(id);
+                    store.getBookFromAPI(id)
                     toast(t('book.BookStatusHasBeenChanged'), {
                         autoClose: 1000,
                         position: toast.POSITION.BOTTOM_RIGHT,
@@ -48,8 +48,8 @@
      * @memberof BookCardComponent
      */
      function generateRating(){
-        var precision = 100; // 2 decimals
-        return Math.floor(Math.random() * (10 * precision - 1 * precision) + 1 * precision) / (1*precision)/2;
+        var precision = 100 // 2 decimals
+        return Math.floor(Math.random() * (10 * precision - 1 * precision) + 1 * precision) / (1*precision)/2
     }
 </script>
 

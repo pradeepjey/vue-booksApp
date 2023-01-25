@@ -1,10 +1,10 @@
 <script setup lang="ts">
   import {useRoute} from 'vue-router'
   import Header from './components/Header.vue'
-  import "vue-haystack/style.css";
-  import { ModalContainer } from "vue-haystack";
-  import { onUnmounted, watch } from 'vue';
-  import { useBookStore } from './store/book';
+  import "vue-haystack/style.css"
+  import { ModalContainer } from "vue-haystack"
+  import { onUnmounted, watch } from 'vue'
+  import { useBookStore } from './store/book'
 
   const route= useRoute()
   const store = useBookStore()
