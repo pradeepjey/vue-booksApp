@@ -1,6 +1,39 @@
-# Vue 3 + TypeScript + Vite
+# Vue 3 + TypeScript + Vite + Tailwindcss
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This Books appliation is build with vue3, vitejs, Typescript and tailwindcss.
+
+
+# Application Requirements
+
+The application needs to be a minimum version of listed below.
+
+1. Vue 3.x 
+2. Node.js 18.x and npm 8.x
+
+## Quick start
+
+```bash
+# select a repo from github
+
+# download the example or clone the repo from github
+git clone https://github.com/pradeepjey/vue-booksApp.git
+
+# change directory
+cd vue-booksApp
+
+# install the repo with npm
+npm install
+
+# start the server
+npm run dev
+
+```
+
+## Environment variable setup
+
+- Create .env and .env.production file at project root level.
+- create "VITE_BASE_URL" & "VITE_APP_VERSION" with base_url and app version 
+- Save the changes and restart the server
 
 ## Recommended IDE Setup
 
